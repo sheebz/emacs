@@ -1,0 +1,10 @@
+;;;neotree
+(require 'neotree)
+(add-to-list 'load-path "/some/path/neotree")
+(require 'neotree)
+(global-set-key [f8] 'neotree-toggle)
+(setq neo-smart-open t)
+(setq projectile-switch-project-action 'neotree-projectile-action)
+'(neo-hidden-regexp-list (quote ("\\.pyc$" "~$" "^#.*#$" "\\.elc$")))
+'(neo-show-hidden-files nil)
+'(neo-theme (quote ascii))
